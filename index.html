@@ -7,7 +7,56 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="mortage-container">
+      <div class="header">
+        <h1>Mortage Calculator</h1>
+        <button>Clear All</button>
+      </div>
+
+      <div class="calculations-part">
+        <span>Mortage Amount</span>
+        <input type="number" name="" id="amount" placeholder="Mortage amout $">
+
+        <div class="calc-inputs">
+          <div class="mortage">
+            <span>Mortage Term</span>
+            <input type="number" name="" id="years" placeholder="Years">
+          </div>
+          
+          <div class="interest">
+            <span>Interest Rate</span>
+            <input type="number" id="percentage">
+          </div>
+        </div>
+        <div class="mortage-type">
+          <span>Mortage Type</span>
+
+          <div class="repayment-text">
+            <label>
+              <input type="radio" name="option" id="repayment">
+            </label>
+            <span>Repayment</span>
+          </div>
+
+          <div class="interest-text">
+            <label>
+              <input type="radio" name="option" id="interest">
+            </label>
+            <span>Interest Only</span>
+          </div>
+
+          <div class="calculate-repayments">
+            <button id="calculator">Calculate Repayments</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="results-container">
+
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
