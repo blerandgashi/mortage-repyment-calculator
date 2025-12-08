@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.mortage-container{
+  margin-bottom: 30px;
+}
+h1{
+  margin-bottom: 15px;
+}
+#clear-btn{
+  margin-bottom: 30px;
+  border: 0;
+  border-bottom: 2px solid gainsboro;
+  color: gray;
+  font-size: 1em;
+  background-color: white;
+  cursor: pointer;
+}
+span{
+  display: block;
+  color: rgb(109, 109, 109);
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 1rem;
+}
+.input input{
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 2px solid rgb(141, 141, 141);
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+.input{
+  margin-bottom: 15px;
+}
+.interest-text{
+  margin-bottom: 10px;
+}
+.repayment-text,
+.interest-text{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#calculator{
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 60px;
+  background-color: rgb(185, 185, 41);
+  border: 0;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
