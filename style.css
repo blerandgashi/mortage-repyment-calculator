@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  display: flex;
-  align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .mortage-container{
   margin-bottom: 30px;
@@ -45,6 +43,16 @@ span{
 .interest-text{
   margin-bottom: 10px;
 }
+.mortage-type{
+  margin-top: 15px;
+}
+.repayment-text,
+.interest-text,
+input,
+.results-container,
+#calculator{
+  max-width: 500px;
+}
 .repayment-text,
 .interest-text{
   display: flex;
@@ -65,4 +73,27 @@ span{
   font-weight: bold;
   color: white;
   cursor: pointer;
+}
+
+/* Result container */
+.results-container{
+  background-color: grey;
+}
+
+@media (min-width: 750px) {
+  .container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .calc-inputs{
+    display: flex;
+    gap: 10px;
+  }
+  .results-container{
+    max-width: 345px;
+  }
+  .mortage-container{
+    max-width: 345px;
+  }
 }
