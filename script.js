@@ -1,7 +1,9 @@
 let interestRate = document.querySelector("#percentage");
 let yearsEl = document.querySelector("#years");
 let mortageAmount = document.querySelector("#amount");
+
 const formContainerEl = document.querySelector("#form-container");
+const clearBtn = document.querySelector("#clear-btn");
 
 let repaymentCheckbox = document.querySelector("#repayment");
 let interestOnlyCheckbox = document.querySelector("#interest");
@@ -38,4 +40,13 @@ interestRate.addEventListener("input", calculateRepayments);
 formContainerEl.addEventListener("submit", function(e){
   e.preventDefault()
   calculateRepayments()
+})
+
+clearBtn.addEventListener("click", function(){
+  mortageAmount.value = "";
+  yearsEl.value = "";
+  interestRate.value = "";
+
+  monthlyRepayments.textContent = "$";
+  totalPayment.textContent = "$";
 })
