@@ -8,67 +8,69 @@
 </head>
 <body>
   <div class="container">
-    <div class="mortage-container">
-      <div class="header">
-        <h1>Mortage Calculator</h1>
-        <button id="clear-btn">Clear All</button>
-      </div>
-
-      <div class="calculations-part">
-        <div class="mortage-amount input">
-          <span>Mortage Amount</span>
-          <input type="number" name="" id="amount" placeholder="Mortage amout $" required>
+    <form action="" id="form-container">
+      <div class="mortage-container">
+        <div class="header">
+          <h1>Mortage Calculator</h1>
+          <button id="clear-btn">Clear All</button>
         </div>
 
-        <div class="calc-inputs">
-          <div class="mortage input">
-            <span>Mortage Term</span>
-            <input type="number" name="" id="years" placeholder="Years" required>
+        <div class="calculations-part">
+          <div class="mortage-amount input">
+            <span>Mortage Amount</span>
+            <input type="number" name="" id="amount" placeholder="Mortage amout $" required>
           </div>
-          
-          <div class="interest input">
-            <span>Interest Rate</span>
-            <input type="number" id="percentage" placeholder="%" required>
+
+          <div class="calc-inputs">
+            <div class="mortage input">
+              <span>Mortage Term</span>
+              <input type="number" name="" id="years" placeholder="Years" required>
+            </div>
+            
+            <div class="interest input">
+              <span>Interest Rate</span>
+              <input type="number" id="percentage" placeholder="%" required>
+            </div>
+          </div>
+          <div class="mortage-type">
+            <span>Mortage Type</span>
+
+            <div class="repayment-text">
+              <label>
+                <input type="radio" name="option" id="repayment">
+              </label>
+              <span>Repayment</span>
+            </div>
+
+            <div class="interest-text">
+              <label>
+                <input type="radio" name="option" id="interest">
+              </label>
+              <span>Interest Only</span>
+            </div>
+
+            <div class="calculate-repayments">
+              <button id="calculator">Calculate Repayments</button>
+            </div>
           </div>
         </div>
-        <div class="mortage-type">
-          <span>Mortage Type</span>
+      </div>
 
-          <div class="repayment-text">
-            <label>
-              <input type="radio" name="option" id="repayment">
-            </label>
-            <span>Repayment</span>
-          </div>
+      <div class="results-container">
+        <h1>Your results</h1>
+        <p>Your results are shown below based on the info you provided. To adjust the results, edit the form and click "calculate repayments" again</p>
 
-          <div class="interest-text">
-            <label>
-              <input type="radio" name="option" id="interest">
-            </label>
-            <span>Interest Only</span>
-          </div>
+        <div class="payments">
+          <span>Your monthly repayments</span>
+          <span class="payment">$</span>
+        </div>
 
-          <div class="calculate-repayments">
-            <button id="calculator">Calculate Repayments</button>
-          </div>
+        <div class="total">
+          <span>Total you will repay over the term</span>
+          <span class="total-payment">$</span>
         </div>
       </div>
-    </div>
-
-    <div class="results-container">
-      <h1>Your results</h1>
-      <p>Your results are shown below based on the info you provided. To adjust the results, edit the form and click "calculate repayments" again</p>
-
-      <div class="payments">
-        <span>Your monthly repayments</span>
-        <span class="payment">$</span>
-      </div>
-
-      <div class="total">
-        <span>Total you will repay over the term</span>
-        <span class="total-payment">$</span>
-      </div>
-    </div>
+    </form>
   </div>
   <script src="script.js"></script>
 </body>
