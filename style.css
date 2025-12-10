@@ -90,7 +90,7 @@ input,
 }
 
 @media (min-width: 750px) {
-  .container{
+  #form-container{
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -104,5 +104,10 @@ input,
   }
   .mortage-container{
     max-width: 345px;
+  }
+  .results-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
